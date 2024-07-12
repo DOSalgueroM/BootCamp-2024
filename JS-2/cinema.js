@@ -56,12 +56,14 @@ class Cinema {
     }
 
     showCinema() {
+        let charCode = 65;
         console.log("Cinema seating:");
         for (let i = 0; i < this.rows; i++) {
             let row = "";
             for (let j = 0; j < this.columns; j++) {
-                row += this.seats[i][j].toString() + " || ";
+                row += String.fromCharCode(charCode) + (j+1) + " " + this.seats[i][j].toString() + " || ";
             }
+            charCode++;
             console.log(row);
         }
     }
@@ -69,7 +71,7 @@ class Cinema {
 
 let cinema = new Cinema(4, 7);
 cinema.showCinema();
-cinema.reserve(0, 2);
-cinema.showCinema();
-cinema.reserve(0, 3);  
-cinema.showCinema();
+// cinema.reserve(0, 2);
+// cinema.showCinema();
+// cinema.reserve(0, 3);  
+// cinema.showCinema();
