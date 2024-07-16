@@ -22,9 +22,7 @@ class Seat {
 }
 
 class Cinema {
-    rows;
-    columns;
-    seats;
+    
     constructor(rows, columns) {
         this.rows = rows;
         this.columns = columns;
@@ -71,9 +69,11 @@ class Cinema {
 
 let cinema = new Cinema(4, 7);
 cinema.showCinema();
-// cinema.reserve(0, 2);
-// cinema.showCinema();
-// cinema.reserve(0, 2);  
-// cinema.showCinema();
-// cinema.reserve(1, 2);
-// cinema.showCinema();
+cinema.reserve(0, 2);
+cinema.showCinema();
+cinema.reserve(0, 2);  
+cinema.showCinema();
+cinema.reserve(1, 2);
+cinema.showCinema();
+cinema.reserve(1, 8);
+cinema.showCinema();
