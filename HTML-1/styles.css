@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.card {
+    width: 200px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.jala {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+.soft {
+    color: #ff0000;
+}
+
+.image-container {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.info {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 16px;
+}
