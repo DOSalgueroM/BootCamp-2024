@@ -2,14 +2,14 @@ class JalasoftCard extends HTMLElement {
     constructor() {
         super();
 
-        // Attach a shadow DOM tree to the instance
+       
         const shadow = this.attachShadow({ mode: 'open' });
 
-        // Create card container
+        
         const card = document.createElement('div');
         card.classList.add('card');
 
-        // Create logo container
+        
         const logo = document.createElement('div');
         logo.classList.add('logo');
         
@@ -24,17 +24,17 @@ class JalasoftCard extends HTMLElement {
         logo.appendChild(jala);
         logo.appendChild(soft);
 
-        // Create image container
+        
         const imageContainer = document.createElement('div');
         imageContainer.classList.add('image-container');
 
         const image = document.createElement('img');
-        image.src = 'descarga.jpg'; // Replace with your image URL
+        image.src = 'descarga.jpg'; 
         image.alt = 'Hirotaka Nifuji';
 
         imageContainer.appendChild(image);
 
-        // Create info container
+        
         const info = document.createElement('div');
         info.classList.add('info');
 
@@ -49,15 +49,15 @@ class JalasoftCard extends HTMLElement {
         info.appendChild(name);
         info.appendChild(role);
 
-        // Append all elements to the card
+        
         card.appendChild(logo);
         card.appendChild(imageContainer);
         card.appendChild(info);
 
-        // Attach the created elements to the shadow DOM
+        
         shadow.appendChild(card);
 
-        // Add styles
+        
         const style = document.createElement('style');
         style.textContent = `
         * {
@@ -145,10 +145,10 @@ class JalasoftCard extends HTMLElement {
 
         `;
 
-        // Attach the style to the shadow DOM
+        
         shadow.appendChild(style);
     }
 }
 
-// Define the new element
+
 customElements.define('jalasoft-card', JalasoftCard);
