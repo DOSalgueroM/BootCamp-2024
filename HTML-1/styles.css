@@ -13,7 +13,10 @@ body {
 }
 
 .card {
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
     background-color: #ffffff;
     border: 1px solid #dcdcdc;
     border-radius: 8px;
@@ -29,6 +32,7 @@ body {
     padding: 10px 0;
     font-size: 24px;
     font-weight: bold;
+    background-color: white;
 }
 
 .jala {
@@ -43,15 +47,19 @@ body {
 }
 
 .image-container {
+    flex:2;
     margin: 10px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: black;
 }
 
 .image-container img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    
 }
 
 .info {
