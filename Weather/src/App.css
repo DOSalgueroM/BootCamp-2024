@@ -1,0 +1,25 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  background-color: #7bac9b;
+  color: black;
+  border: 1px solid #1a4234;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 10%;
+}
