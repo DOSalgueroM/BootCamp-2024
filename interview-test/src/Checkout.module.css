@@ -34,3 +34,7 @@ td {
   width: 25px;
   height: 25px;
 }
+
+th {
+  font-family: 'Courier New', Courier, monospace;
+}
